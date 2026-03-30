@@ -284,16 +284,17 @@ a{text-decoration:none;color:inherit}
 }
 .price-row{
   display:flex;justify-content:space-between;align-items:flex-start;
-  padding:1.4rem 0;border-bottom:1px solid var(--border);gap:1.5rem;
+  padding:2rem 0 1.4rem;border-bottom:1px solid var(--border);gap:1.5rem;
   flex-wrap:wrap;
 }
 .price-row:first-of-type{border-top:1px solid var(--border)}
 .price-left{}
 .price-label{font-size:15px;font-weight:500;color:var(--text);margin-bottom:.3rem;letter-spacing:-.01em}
 .price-note{font-size:13px;color:var(--text2);line-height:1.6;font-weight:300;max-width:380px}
-.price-val{font-family:var(--serif);font-size:36px;color:var(--text);white-space:nowrap;flex-shrink:0}
-.price-val.secondary{font-family:var(--sans);font-size:20px;font-weight:500;padding-top:6px}
-.price-sub-note{font-size:11px;color:var(--text3);text-align:right;margin-top:4px;letter-spacing:.02em}
+.price-val-wrap{display:flex;align-items:baseline;gap:8px;justify-content:flex-end;flex-shrink:0}
+.price-val{font-family:var(--serif);font-size:36px;color:var(--text);white-space:nowrap}
+.price-val.secondary{font-family:var(--sans);font-size:20px;font-weight:500}
+.price-sub-note{font-size:12px;color:var(--text3);letter-spacing:.02em;white-space:nowrap}
 
 /* ─── PITCH ─── */
 .pitch-wrap{max-width:760px;margin:0 auto;padding:5rem 2rem}
@@ -430,7 +431,7 @@ a{text-decoration:none;color:inherit}
       <h4>Visual Identity System</h4>
       <p>Your color palette, typography, and visual language — built to feel premium, minimal, and distinctly you. Includes a personal styleguide so every piece of content looks like it came from the same person, whether it's a talking-head video, a graphic, or a carousel post.</p>
       <div class="d-pills">
-        <span class="pill">Figma styleguide</span>
+        <span class="pill">Canva style guide</span>
         <span class="pill">Color + type system</span>
         <span class="pill">Visual moodboard</span>
         <span class="pill">2 revision rounds</span>
@@ -442,15 +443,19 @@ a{text-decoration:none;color:inherit}
   <div class="deliverable">
     <div class="d-num">04</div>
     <div class="d-body">
-      <h4>Shot System Blueprint</h4>
-      <p>A custom visual recipe for how your content looks on camera — shot angles, framing, lighting setup, background and environment direction, and reference imagery. You'll know exactly how to set up and shoot before you record a single frame. No guessing, no generic talking-head setup.</p>
+      <h4>Shot System & Technical Content Training</h4>
+      <p>A custom visual recipe for how your content looks on camera — shot angles, framing, lighting setup, background and environment direction. Then we walk through the actual technical side: how to shoot, frame yourself, mic and audio basics, and an editing walkthrough in whatever tool fits your workflow. You'll leave knowing exactly how to set up, shoot, and produce clean, watchable content without guessing.</p>
       <div class="d-pills">
         <span class="pill">Shot reference PDF</span>
         <span class="pill">Lighting & setup guide</span>
         <span class="pill">Environment direction</span>
+        <span class="pill">1-on-1 training session</span>
+        <span class="pill">Gear & setup recommendations</span>
+        <span class="pill">Editing workflow guide</span>
+        <span class="pill">Recorded for reference</span>
       </div>
     </div>
-    <div class="d-week">Week 2</div>
+    <div class="d-week">Week 2–3</div>
   </div>
 
   <div class="deliverable">
@@ -466,26 +471,11 @@ a{text-decoration:none;color:inherit}
         <span class="pill">Walkthrough Loom</span>
       </div>
     </div>
-    <div class="d-week">Week 2–3</div>
-  </div>
-
-  <div class="deliverable">
-    <div class="d-num">06</div>
-    <div class="d-body">
-      <h4>Technical Content Training</h4>
-      <p>We teach you the actual technical side of creating content — how to shoot, how to frame yourself, microphone and audio basics, and an editing walkthrough in whatever tool fits your workflow. You'll leave knowing how to produce clean, watchable content without hiring a full team.</p>
-      <div class="d-pills">
-        <span class="pill">1-on-1 training session</span>
-        <span class="pill">Gear & setup recommendations</span>
-        <span class="pill">Editing workflow guide</span>
-        <span class="pill">Recorded for reference</span>
-      </div>
-    </div>
     <div class="d-week">Week 3</div>
   </div>
 
   <div class="deliverable">
-    <div class="d-num">07</div>
+    <div class="d-num">06</div>
     <div class="d-body">
       <h4>7-Day Launch Plan + 90-Day Content Roadmap</h4>
       <p>A specific, day-by-day launch calendar for your first week of content — exactly what to post, in what format, and why. Plus a 90-day strategic roadmap with monthly content themes and milestones mapped to growing your audience and driving app downloads.</p>
@@ -499,7 +489,7 @@ a{text-decoration:none;color:inherit}
   </div>
 
   <div class="deliverable">
-    <div class="d-num">08</div>
+    <div class="d-num">07</div>
     <div class="d-body">
       <h4>Final Handoff Call</h4>
       <p>A 60-minute walkthrough of every deliverable. We review everything together, answer your questions, make any final adjustments, and make sure you walk away confident and ready to launch — not just with files in a folder.</p>
@@ -528,7 +518,6 @@ a{text-decoration:none;color:inherit}
       </div>
       <div class="addon-price-block">
         <div class="addon-price">$800<span>/mo</span></div>
-        <div class="addon-price-note">12 videos · standalone</div>
       </div>
     </div>
     <div class="addon-list">
@@ -553,9 +542,9 @@ a{text-decoration:none;color:inherit}
     <div class="price-row">
       <div class="price-left">
         <div class="price-label">Full Brand Build</div>
-        <div class="price-note">All 8 deliverables — strategy through handoff. Everything above, done for you in 30 days.</div>
+        <div class="price-note">All 7 deliverables — strategy through handoff. Everything above, done for you in 30 days.</div>
       </div>
-      <div>
+      <div class="price-val-wrap">
         <div class="price-val">$5,000</div>
         <div class="price-sub-note">one-time</div>
       </div>
@@ -566,7 +555,7 @@ a{text-decoration:none;color:inherit}
         <div class="price-label">Payment plan</div>
         <div class="price-note">Split over 3 months — no fees, no interest. Work starts immediately on day one.</div>
       </div>
-      <div>
+      <div class="price-val-wrap">
         <div class="price-val secondary">$1,667 × 3</div>
         <div class="price-sub-note">over 3 months</div>
       </div>
@@ -577,7 +566,7 @@ a{text-decoration:none;color:inherit}
         <div class="price-label">Editing add-on</div>
         <div class="price-note">Optional and standalone. Can be added during or after the build — whenever you're ready.</div>
       </div>
-      <div>
+      <div class="price-val-wrap">
         <div class="price-val secondary">+ $800/mo</div>
         <div class="price-sub-note">standalone</div>
       </div>
